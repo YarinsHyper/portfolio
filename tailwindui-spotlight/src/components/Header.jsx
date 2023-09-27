@@ -123,7 +123,7 @@ function MobileNavigation(props) {
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                 {/* <MobileNavItem href="/about">About</MobileNavItem> */}
                 <MobileNavItem href="/code">Projects</MobileNavItem>
-                <MobileNavItem href="/articles">Experience</MobileNavItem>
+                <MobileNavItem href="/experience">Experience</MobileNavItem>
                 <MobileNavItem href="/devrel">DevRel</MobileNavItem>
                 {/* <MobileNavItem href="/consulting">Consulting</MobileNavItem> */}
               </ul>

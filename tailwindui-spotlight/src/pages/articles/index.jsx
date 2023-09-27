@@ -9,9 +9,9 @@ function Article({ article }) {
   return (
     <article className="md:grid md:grid-cols-4 md:items-baseline">
       <Card className="md:col-span-3">
-        <Card.Title href={`${article.url}`}>
-          {article.title}
-        </Card.Title>
+        {/* <Card.Title href={`${article.url}`}> */}
+        <Card.Title>{article.title}</Card.Title>
+        <Card.Company>{article.company}</Card.Company>
         <Card.Eyebrow
           as="time"
           dateTime={article.date}
@@ -21,7 +21,7 @@ function Article({ article }) {
           {formatDate(article.date)}
         </Card.Eyebrow>
         <Card.Description>{article.description}</Card.Description>
-        <Card.Cta>Read article</Card.Cta>
+        {/* <Card.Cta>Read article</Card.Cta> */}
       </Card>
       <Card.Eyebrow
         as="time"
@@ -38,15 +38,12 @@ export default function ArticlesIndex({ articles }) {
   return (
     <>
       <Head>
-        <title>Articles -Yarin Benisty</title>
-        <meta
-          name="description"
-          content=""
-        />
+        <title>Experience - Yarin Benisty</title>
+        <meta name="description" content="" />
       </Head>
       <SimpleLayout
-        title="Writing on software development, Web3 and the crypto space."
-        intro=""
+        title="Experience"
+        intro="Projects and Systems ive been part of developing and pushing to production in my past and current roles as a developer."
       >
         <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
           <div className="flex max-w-3xl flex-col space-y-16">

@@ -4,13 +4,12 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
-  TwitterIcon,
+  // TwitterIcon,
   GitHubIcon,
   LinkedInIcon,
-  YouTubeIcon,
+  // YouTubeIcon,
 } from '@/components/SocialIcons'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
@@ -69,68 +68,24 @@ function BriefcaseIcon(props) {
   )
 }
 
-// function ArrowDownIcon(props) {
-//   return (
-//     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
-//       <path
-//         d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5"
-//         strokeWidth="1.5"
-//         strokeLinecap="round"
-//         strokeLinejoin="round"
-//       />
-//     </svg>
-//   )
-// }
-
-// function Article({ article }) {
-//   return (
-//     <Card as="article">
-//       <Card.Title href={`/articles/${article.slug}`}>
-//         {article.title}
-//       </Card.Title>
-//       <Card.Eyebrow as="time" dateTime={article.date} decorate>
-//         {formatDate(article.date)}
-//       </Card.Eyebrow>
-//       <Card.Description>{article.description}</Card.Description>
-//       <Card.Cta>Read article</Card.Cta>
-//     </Card>
-//   )
-// }
+function ArrowDownIcon(props) {
+  return (
+    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
+      <path
+        d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
 
 function SocialLink({ icon: Icon, ...props }) {
   return (
     <Link className="group -m-1 p-1" {...props}>
       <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
     </Link>
-  )
-}
-
-function Newsletter() {
-  return (
-    <form
-      action="/thank-you"
-      className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
-    >
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <MailIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Stay up to date</span>
-      </h2>
-      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Get notified when I publish something new, and unsubscribe at any time.
-      </p>
-      <div className="mt-6 flex">
-        <input
-          type="email"
-          placeholder="Email address"
-          aria-label="Email address"
-          required
-          className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
-        />
-        <Button type="submit" className="ml-4 flex-none">
-          Join
-        </Button>
-      </div>
-    </form>
   )
 }
 
@@ -195,10 +150,21 @@ function Resume() {
           </li>
         ))}
       </ol>
-      {/* <Button href="./pages/resume/Sarah-Benson-Resume.pdf" variant="secondary" className="group mt-6 w-full" download>
-        Download CV
-        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button> */}
+      {/* <a
+        href="./pages/Yarin-Benisty-Resume.pdf"
+        download="Yarin-Benisty-Resume.pdf"
+        class="inline-flex items-center rounded-lg bg-blue-500 px-4 py-2 font-semibold text-white transition duration-300 ease-in-out hover:bg-blue-600"
+      > */}
+        <Button
+          url="./Yarin-Benisty-Resume.pdf"
+          variant="secondary"
+          className="group mt-6 w-full"
+          download="./Yarin-Benisty-Resume.pdf"
+        >
+          Download CV
+          <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+        </Button>
+      {/* </a> */}
     </div>
   )
 }
@@ -247,15 +213,17 @@ export default function Home({ articles }) {
             Full-stack web developer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          <b>I&apos;m Yarin, a Full-stack web developer based in Israel
-            with 3+ years of practice.
-            <br></br>
-            Seeking a dynamic role as a Full Stack or Backend Developer, Seeking
-            a dynamic role
-            <br></br>
-            as a Full Stack or Backend Developer, utilizing my skills and
-            experience to contribute to innovative projects and deliver
-            high-quality solutions.</b>
+            <b>
+              I&apos;m Yarin, a Full-stack web developer based in Israel with 3+
+              years of practice.
+              <br></br>
+              Seeking a dynamic role as a Full Stack or Backend Developer,
+              Seeking a dynamic role
+              <br></br>
+              as a Full Stack or Backend Developer, utilizing my skills and
+              experience to contribute to innovative projects and deliver
+              high-quality solutions.
+            </b>
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -275,30 +243,27 @@ export default function Home({ articles }) {
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
-            {/* {articles.map((article) => (
-              <Article key={article.slug} article={article} />
-            ))} */}
             <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-              I love building software, and have spent the last few years in the idf 
-              intelligence unit working on applications With contributions in frontend, backend,
-              and devops spanning a range of programming languages and tools,
-              I&apos;ve participated in the full software development lifecycle
-              from requirements gathering to agile and micro-service development to quality
-              assurance.<br></br>
+              I love building software, and have spent the last few years in the
+              idf intelligence unit working on applications With contributions
+              in frontend, backend, and devops spanning a range of programming
+              languages and tools, I&apos;ve participated in the full software
+              development lifecycle from requirements gathering to agile and
+              micro-service development to quality assurance.<br></br>
               <br></br>
               I&apos;ve worked with a team to deliver results in a fast-paced,
               early stage startup environment. I&apos;ve written code
               that&apos;s responsible for .<br></br>
               <br></br>
-              In my past role I Continued to make improvements and
-              optimizations to internal systems and help move my team towards
-              best practices in engineering standards.<br></br>
+              In my past role I Continued to make improvements and optimizations
+              to internal systems and help move my team towards best practices
+              in engineering standards.<br></br>
               <br></br>
-              I&apos;m Experienced in both independent work and collaborative 
-              teamwork, Hardworker, creative and highly motivated. Striving for 
-              excellence, loves technology and learning new things. When I&apos;m 
-              not coding, I enjoy traveling, gaming, working-out, volleyball, and 
-              hanging out with friends.
+              I&apos;m Experienced in both independent work and collaborative
+              teamwork, Hardworker, creative and highly motivated. Striving for
+              excellence, loves technology and learning new things. When
+              I&apos;m not coding, I enjoy traveling, gaming, working-out,
+              volleyball, and hanging out with friends.
             </p>
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
