@@ -150,21 +150,36 @@ function Resume() {
           </li>
         ))}
       </ol>
+      <Button
+        href="./Yarin-Benisty-Resume.pdf"
+        variant="secondary"
+        className="group mt-6 w-full"
+        download
+      >
+        Download CV
+        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+      </Button>
       {/* <a
-        href="./pages/Yarin-Benisty-Resume.pdf"
+        href="./Yarin-Benisty-Resume.pdf"
         download="Yarin-Benisty-Resume.pdf"
         class="inline-flex items-center rounded-lg bg-blue-500 px-4 py-2 font-semibold text-white transition duration-300 ease-in-out hover:bg-blue-600"
-      > */}
-        <Button
-          url="./Yarin-Benisty-Resume.pdf"
-          variant="secondary"
-          className="group mt-6 w-full"
-          download="./Yarin-Benisty-Resume.pdf"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="mr-2 h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
         >
-          Download CV
-          <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-        </Button>
-      {/* </a> */}
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M16 17l-4 4m0 0l-4-4m4 4V3"
+          ></path>
+        </svg>
+        Download Resume
+      </a> */}
     </div>
   )
 }
