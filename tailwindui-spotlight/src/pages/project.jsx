@@ -1,18 +1,18 @@
 import Image from 'next/image'
 import Head from 'next/head'
 
+import AvatarLogo from '../images/avatar.png'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
 const projects = [
-  // {
-  //   name: '',
-  //   description:
-  //     '',
-  //   link: { href: 'https://exmaple.com/', label: 'exmaple.com' },
-  //   logo: logoAmberdata,
-  // },
-  //
+  {
+    name: 'Portfolio Site',
+    description:
+      'A website to represent and showcase my skills, projects and CV.',
+    link: { href: 'http://yarinbenisty.com/', label: 'yarinbenisty.com' },
+    logo: AvatarLogo,
+  },
 ]
 
 function LinkIcon(props) {
