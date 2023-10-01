@@ -117,7 +117,7 @@ function Resume() {
         ))}
       </ol>
       <Button
-        href="./Yarin-Benisty-Resume.pdf"
+        href="/assets/Yarin-Benisty-Resume.pdf"
         variant="secondary"
         className="group mt-6 w-full"
         download
