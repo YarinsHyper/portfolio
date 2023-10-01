@@ -1,4 +1,4 @@
-const articles = [
+const experiences = [
   {
     title: 'Drive',
     company: 'IDF Intelligence Unit',
@@ -17,6 +17,6 @@ const articles = [
   },
 ]
 
-export async function getAllArticles() {
-  return articles.sort((a, z) => new Date(z.date) - new Date(a.date))
+export async function getAllExperiences() {
+  return experiences.sort((a, z) => new Date(z.date) - new Date(a.date))
 }

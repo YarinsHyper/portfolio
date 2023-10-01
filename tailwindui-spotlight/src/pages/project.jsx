@@ -4,49 +4,15 @@ import Head from 'next/head'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
-import logoGMBinder from '@/images/logos/gm-binder-logo.png'
-import logoPoppins from '@/images/logos/poppins-payroll-logo.png'
-import logoCarbonFootprint from '@/images/logos/pork-logo.png'
-import logoImpact from '@/images/logos/impact-logo.png'
-import logoAmberdata from '@/images/logos/amberdata-logo.png'
-
-
 const projects = [
-  {
-    name: 'AD Derivatives',
-    description:
-      'Crypto options analytics for institutional and individual traders.',
-    link: { href: 'https://pro.amberdata.io/', label: 'pro.amberdata.io' },
-    logo: logoAmberdata,
-  },
-  {
-    name: 'IMPACT Community Action Partnership',
-    description:
-      'Safer online alternative to food pantry shopping.',
-    link: { href: 'https://wewritecode.com/work/platform-buildout-for-online-food-pantry/', label: 'impactcap.org' },
-    logo: logoImpact,
-  },
-  {
-    name: 'Carbon Footprint Calculator',
-    description:
-      'National Pork Board software for tracking carbon emissions of producer farms.',
-    link: { href: 'https://cfc.pork.org/account/login', label: 'cfc.pork.org' },
-    logo: logoCarbonFootprint,
-  },
-  {
-    name: 'Poppins Payroll',
-    description:
-      'Payroll and tax management and reports for in-home staff.',
-    link: { href: 'https://www.poppinspayroll.com/', label: 'poppinspayroll.com' },
-    logo: logoPoppins,
-  },
-  {
-    name: 'GM Binder',
-    description:
-      'A platform for rpg document creation and storage.',
-    link: { href: 'https://www.gmbinder.com/', label: 'gmbinder.com' },
-    logo: logoGMBinder,
-  },
+  // {
+  //   name: '',
+  //   description:
+  //     '',
+  //   link: { href: 'https://exmaple.com/', label: 'exmaple.com' },
+  //   logo: logoAmberdata,
+  // },
+  //
 ]
 
 function LinkIcon(props) {
@@ -65,10 +31,7 @@ export default function Projects() {
     <>
       <Head>
         <title>Projects - Yarin Benisty</title>
-        <meta
-          name="description"
-          content="Software I've written."
-        />
+        <meta name="description" content="Software I've written." />
       </Head>
       <SimpleLayout
         title="My Projects"

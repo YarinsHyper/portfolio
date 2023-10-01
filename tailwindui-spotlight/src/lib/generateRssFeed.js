@@ -2,10 +2,10 @@ import ReactDOMServer from 'react-dom/server'
 import { Feed }  from 'feed'
 import { mkdir, writeFile } from 'fs/promises'
 
-import { getAllArticles } from './getAllArticles'
+import { getAllExperiences } from './getAllArticles'
 
 export async function generateRssFeed() {
-  let articles = await getAllArticles()
+  let articles = await getAllExperiences()
   let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
   let author = {
     name: 'Yarin Benisty',
@@ -28,7 +28,7 @@ export async function generateRssFeed() {
   })
 
   for (let article of articles) {
-    // let url = `${siteUrl}/articles/${article.slug}`
+    // let url = `${siteUrl}/experience/${article.slug}`
     let html = ReactDOMServer.renderToStaticMarkup(
       <article.component isRssFeed />
     )
