@@ -18,7 +18,7 @@ const projects = [
     name: 'Meals Site',
     description:
       'Basic React ui app that calculates your meals in a shopping cart .',
-    link: { href: 'https://meals-indol-delta.vercel.app/', label: 'Meals App' },
+    link: { href: 'https://meals-indol-delta.vercel.app/', label: 'meals.vercel.app' },
     logo: MealLogo,
   },
 ]
