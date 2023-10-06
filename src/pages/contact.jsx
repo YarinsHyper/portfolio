@@ -1,3 +1,4 @@
+"use client"
 import Head from 'next/head'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { Container } from '@/components/Container'

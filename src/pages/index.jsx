@@ -171,12 +171,9 @@ export default function Home({ experiences }) {
               I&apos;m Yarin, a Full-stack web developer based in Israel with 3+
               years of practice.
               <br></br>
-              Seeking a dynamic role as a Full Stack or Backend Developer,
-              Seeking a dynamic role
-              <br></br>
-              as a Full Stack or Backend Developer, utilizing my skills and
-              experience to contribute to innovative projects and deliver
-              high-quality solutions.
+              Seeking a dynamic role as a Full Stack or Backend Developer, 
+              utilizing my skills and experience to contribute to innovative
+              projects and deliver high-quality solutions.
             </b>
           </p>
           <div className="mt-6 flex gap-6">

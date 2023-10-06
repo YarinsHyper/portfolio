@@ -3,7 +3,6 @@ import Head from 'next/head'
 
 import { Container } from '@/components/Container'
 
-import portraitImage from '@/images/portrait.jpg'
 
 import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
@@ -41,7 +40,6 @@ export default function Contact() {
           <div className="lg:pl-20">
             <div className="max-w-xs px-2.5 lg:max-w-none">
               <Image
-                src={portraitImage}
                 alt=""
                 sizes="(min-width: 1024px) 32rem, 20rem"
                 className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"

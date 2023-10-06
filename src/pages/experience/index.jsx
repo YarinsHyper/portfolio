@@ -1,3 +1,4 @@
+'use client'
 import Head from 'next/head'
 
 import { Card } from '@/components/Card'
@@ -60,7 +61,9 @@ export default function ExperienceIndex({ experiences }) {
 export async function getStaticProps() {
   return {
     props: {
-      experiences: (await getAllExperiences()).map(({ component, ...meta }) => meta),
+      experiences: (await getAllExperiences()).map(
+        ({ component, ...meta }) => meta
+      ),
     },
   }
 }
