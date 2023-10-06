@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Head from 'next/head'
 
 import AvatarLogo from '../images/avatar.png'
+import MealLogo from '../images/meal.png'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
@@ -12,6 +13,13 @@ const projects = [
       'A website to represent and showcase my skills, projects and CV.',
     link: { href: 'http://yarinbenisty.com/', label: 'yarinbenisty.com' },
     logo: AvatarLogo,
+  },
+  {
+    name: 'Meals Site',
+    description:
+      'Basic React ui app that calculates your meals in a shopping cart .',
+    link: { href: 'https://meals-indol-delta.vercel.app/', label: 'Meals App' },
+    logo: MealLogo,
   },
 ]
 
