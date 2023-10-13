@@ -15,12 +15,11 @@ npm run dev
 Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
 
 To make a production version of the code run:
-First Step:
 ```bash
 npm run build
 ```
 
-Second Step:
+And after run:
 ```bash
 npm run start
 ```
