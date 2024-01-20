@@ -91,7 +91,8 @@ function Resume() {
     } 
   ]
 
-  return (<div>
+  return ( 
+  <div>
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
@@ -297,7 +298,6 @@ export default function Home({ experiences }) {
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             {/* <Newsletter /> */}
-            <Resume />
             <Resume />
           </div>
         </div>
