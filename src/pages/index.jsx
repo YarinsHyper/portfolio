@@ -7,7 +7,7 @@ import { Container } from '@/components/Container'
 import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 
 import amanLogo from '@/images/logos/aman-logo.png'
-import computerLogo from '@/images/logos/computer-logo.png'
+import companyOneBiLogo from '@/images/logos/onebi-logo.png'
 
 import { getAllExperiences } from '@/lib/getAllArticles'
 
@@ -58,22 +58,22 @@ function SocialLink({ icon: Icon, ...props }) {
 function Resume() {
   let resume = [
     {
-      company: 'IDF Intelligence',
+      company: 'One BI',
       title: 'Full Stack Developer',
-      logo: amanLogo,
-      start: '2020',
-      end: '2023',
-    },
-    {
-      company: 'Freelance',
-      title: 'Full Stack Developer',
-      logo: computerLogo,
-      start: '2023',
+      logo: companyOneBiLogo,
+      start: '2024',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
       },
     },
+    {
+      company: 'IDF Intelligence',
+      title: 'Full Stack Developer',
+      logo: amanLogo,
+      start: '2020',
+      end: '2023',
+    }    
   ]
 
   return (
