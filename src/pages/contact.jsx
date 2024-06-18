@@ -1,15 +1,16 @@
 "use client"
 import Head from 'next/head'
+import React from 'react'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { Container } from '@/components/Container'
 
 export default function Contact() {
-  const LabelStyles = {
+  const Labelstyle = {
     color: '#D4D4D8',
     fontSize: '25px',
     marginTop: '15px',
   }
-  const InputStyles = {
+  const Inputstyle = {
     width: '400px',
     padding: '12px',
     boxSizing: 'border-box',
@@ -40,27 +41,27 @@ export default function Contact() {
             }}
           >
             <input type="hidden" name="_captcha" value="false" />
-            <label htmlFor="name" style={LabelStyles}>
+            <label htmlFor="name" style={Labelstyle}>
               Name
             </label>
             <input
               type="text"
               name="name"
               placeholder="your name here.."
-              style={{ ...InputStyles, height: '40px' }}
+              style={{ ...Inputstyle, height: '40px' }}
               required
             />
-            <label htmlFor="email" style={LabelStyles}>
+            <label htmlFor="email" style={Labelstyle}>
               Email Address
             </label>
             <input
               type="email"
               name="email"
               placeholder="your email here.."
-              style={{ ...InputStyles, height: '40px' }}
+              style={{ ...Inputstyle, height: '40px' }}
               required
             />
-            <label htmlFor="message" style={LabelStyles}>
+            <label htmlFor="message" style={Labelstyle}>
               Message
             </label>
             <input
@@ -68,7 +69,7 @@ export default function Contact() {
               name="message"
               placeholder="Write something.."
               style={{
-                ...InputStyles,
+                ...Inputstyle,
                 resize: 'vertical',
               }}
               required
@@ -76,7 +77,7 @@ export default function Contact() {
             <button
               type="submit"
               style={{
-                ...LabelStyles,
+                ...Labelstyle,
                 border: 'solid 1px #27272A80',
                 borderRadius: '8px',
                 backgroundColor: '#27272A80',

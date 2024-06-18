@@ -1,4 +1,5 @@
 import { Container } from '@/components/Container'
+import React from 'react'
 
 export function SimpleLayout({ title, intro, children }) {
   return (

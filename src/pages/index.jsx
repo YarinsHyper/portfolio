@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Head from 'next/head'
 import Link from 'next/link'
-
+import React from 'react'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
@@ -38,10 +38,10 @@ function BriefcaseIcon(props) {
 function EducationHat() {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-      <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-        <path d="M 89.705 60.21 c 0 -2.087 -1.457 -3.831 -3.404 -4.295 V 34.354 c 0 -0.565 -0.457 -1.023 -1.023 -1.023 c -0.565 0 -1.023 0.458 -1.023 1.023 v 21.561 c -1.947 0.464 -3.404 2.208 -3.404 4.295 s 1.457 3.831 3.404 4.295 v 6.839 c 0 0.565 0.457 1.023 1.023 1.023 c 0.565 0 1.023 -0.457 1.023 -1.023 v -6.839 C 88.249 64.041 89.705 62.298 89.705 60.21 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(112,112,112); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-        <path d="M 70.545 40.218 v 24.831 c 0 1.948 -1.315 3.636 -3.19 4.165 c -14.904 4.204 -29.807 4.204 -44.711 0 c -1.875 -0.529 -3.19 -2.217 -3.19 -4.165 V 40.218 H 70.545 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(100,100,100); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-        <path d="M 1.015 34.159 l 39.651 13.028 c 2.815 0.925 5.852 0.925 8.667 0 l 39.651 -13.028 c 1.354 -0.445 1.354 -2.36 0 -2.805 L 49.333 18.326 c -2.815 -0.925 -5.852 -0.925 -8.667 0 L 1.015 31.354 C -0.338 31.799 -0.338 33.714 1.015 34.159 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(70,70,70); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+      <g styles="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+        <path d="M 89.705 60.21 c 0 -2.087 -1.457 -3.831 -3.404 -4.295 V 34.354 c 0 -0.565 -0.457 -1.023 -1.023 -1.023 c -0.565 0 -1.023 0.458 -1.023 1.023 v 21.561 c -1.947 0.464 -3.404 2.208 -3.404 4.295 s 1.457 3.831 3.404 4.295 v 6.839 c 0 0.565 0.457 1.023 1.023 1.023 c 0.565 0 1.023 -0.457 1.023 -1.023 v -6.839 C 88.249 64.041 89.705 62.298 89.705 60.21 z" styles="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(112,112,112); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+        <path d="M 70.545 40.218 v 24.831 c 0 1.948 -1.315 3.636 -3.19 4.165 c -14.904 4.204 -29.807 4.204 -44.711 0 c -1.875 -0.529 -3.19 -2.217 -3.19 -4.165 V 40.218 H 70.545 z" styles="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(100,100,100); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+        <path d="M 1.015 34.159 l 39.651 13.028 c 2.815 0.925 5.852 0.925 8.667 0 l 39.651 -13.028 c 1.354 -0.445 1.354 -2.36 0 -2.805 L 49.333 18.326 c -2.815 -0.925 -5.852 -0.925 -8.667 0 L 1.015 31.354 C -0.338 31.799 -0.338 33.714 1.015 34.159 z" styles="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(70,70,70); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
       </g>
     </svg>
   )
@@ -95,7 +95,7 @@ function Resume() {
       title: 'B.Sc Computer Science',
       logo: theOpenUniLogo,
       start: '2024',
-      end: '2027'
+      end: '2028'
       // end: {
       //   label: 'Present',
       //   dateTime: new Date().getFullYear(),
@@ -177,7 +177,7 @@ function Resume() {
       <br></br>
       <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
         <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-          <EducationHat className="h-6 w-6 flex-none" />
+          <BriefcaseIcon className="h-6 w-6 flex-none" />
           <span className="ml-3">Education</span>
         </h2>
         <ol className="mt-6 space-y-4">
@@ -284,8 +284,8 @@ export default function Home({ experiences }) {
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
             <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-              I love building software, and have spent the last few years in the
-              idf intelligence unit working on applications With contributions
+              I love building software, and have spent the past few years working 
+              on applications With contributions
               in frontend, backend, and devops spanning a range of programming
               languages and tools, I&apos;ve participated in the full software
               development lifecycle from requirements gathering to agile and

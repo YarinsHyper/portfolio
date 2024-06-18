@@ -1,4 +1,5 @@
 import { Head, Html, Main, NextScript } from 'next/document'
+import React from 'react'
 
 const modeScript = `
   let darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')

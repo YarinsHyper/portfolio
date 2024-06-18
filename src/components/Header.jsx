@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
+import React from 'react'
 
 import { Container } from '@/components/Container'
 import avatarImage from '@/images/avatar.png'
@@ -354,7 +355,7 @@ export function Header() {
     <>
       <header
         className="pointer-events-none relative z-50 flex flex-col"
-        style={{
+        styles={{
           height: 'var(--header-height)',
           marginBottom: 'var(--header-mb)',
         }}
@@ -367,11 +368,11 @@ export function Header() {
             />
             <Container
               className="top-0 order-last -mb-3 pt-3"
-              style={{ position: 'var(--header-position)' }}
+              styles={{ position: 'var(--header-position)' }}
             >
               <div
                 className="top-[var(--avatar-top,theme(spacing.3))] w-full"
-                style={{ position: 'var(--header-inner-position)' }}
+                styles={{ position: 'var(--header-inner-position)' }}
               >
                 <div className="relative">
                   <AvatarContainer
@@ -384,7 +385,7 @@ export function Header() {
                   <Avatar
                     large
                     className="block h-16 w-16 origin-left"
-                    style={{ transform: 'var(--avatar-image-transform)' }}
+                    styles={{ transform: 'var(--avatar-image-transform)' }}
                   />
                 </div>
               </div>
@@ -394,11 +395,11 @@ export function Header() {
         <div
           ref={headerRef}
           className="top-0 z-10 h-16 pt-6"
-          style={{ position: 'var(--header-position)' }}
+          styles={{ position: 'var(--header-position)' }}
         >
           <Container
             className="top-[var(--header-top,theme(spacing.6))] w-full"
-            style={{ position: 'var(--header-inner-position)' }}
+            styles={{ position: 'var(--header-inner-position)' }}
           >
             <div className="relative flex gap-4">
               <div className="flex flex-1">
@@ -421,7 +422,7 @@ export function Header() {
           </Container>
         </div>
       </header>
-      {isHomePage && <div style={{ height: 'var(--content-offset)' }} />}
+      {isHomePage && <div styles={{ height: 'var(--content-offset)' }} />}
     </>
   )
 }

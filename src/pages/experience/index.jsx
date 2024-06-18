@@ -1,5 +1,6 @@
 'use client'
 import Head from 'next/head'
+import React from 'react'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
@@ -44,7 +45,7 @@ export default function ExperienceIndex({ experiences }) {
       </Head>
       <SimpleLayout
         title="Experience"
-        intro="Projects and Systems ive been part of developing and pushing to production in my past and current roles as a developer."
+        intro="My personal past and present experience as a developer."
       >
         <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
           <div className="flex max-w-3xl flex-col space-y-16">
