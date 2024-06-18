@@ -1,19 +1,17 @@
-import Image from 'next/image'
-import React from 'react'
-import Head from 'next/head'
+import React from 'react';
+import Image from 'next/image';
+import Head from 'next/head';
 
-import { Container } from '@/components/Container'
-
-
-import { Card } from '@/components/Card'
-import { Section } from '@/components/Section'
+import { Container } from '@/components/Container';
+import { Card } from '@/components/Card';
+import { Section } from '@/components/Section';
 
 function SpeakingSection({ children, ...props }) {
   return (
     <Section {...props}>
       <div className="space-y-16">{children}</div>
     </Section>
-  )
+  );
 }
 
 function Appearance({ title, description, event, cta, href }) {
@@ -26,7 +24,7 @@ function Appearance({ title, description, event, cta, href }) {
       <Card.Description>{description}</Card.Description>
       <Card.Cta>{cta}</Card.Cta>
     </Card>
-  )
+  );
 }
 
 export default function Contact() {
@@ -41,6 +39,7 @@ export default function Contact() {
           <div className="lg:pl-20">
             <div className="max-w-xs px-2.5 lg:max-w-none">
               <Image
+                src="/path/to/your/image.jpg" // Ensure you provide a valid src path
                 alt=""
                 sizes="(min-width: 1024px) 32rem, 20rem"
                 className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
@@ -102,5 +101,5 @@ export default function Contact() {
         </div>
       </Container>
     </>
-  )
+  );
 }
