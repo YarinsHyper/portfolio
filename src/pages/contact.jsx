@@ -32,7 +32,7 @@ export default function Contact() {
       <Container className="sm:mt-26 mt-16">
         <div>
           <form
-            action="https://formsubmit.co/yarin1857@gmail.com"
+            action="https://formsubmit.co/itshyperex@gmail.com"
             method="POST"
             style={{
               display: 'flex',
