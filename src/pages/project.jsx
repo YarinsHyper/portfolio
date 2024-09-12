@@ -3,6 +3,7 @@ import Head from 'next/head'
 import React from 'react'
 import AvatarLogo from '../images/avatar.png'
 import MealLogo from '../images/meal.png'
+import TaskLogo from '../images/logos/tasks.ico'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
@@ -17,9 +18,16 @@ const projects = [
   {
     name: 'Meals Site',
     description:
-      'Basic React ui app that calculates your meals in a shopping cart .',
+      'Basic React ui app that calculates your meals in a shopping cart.',
     link: { href: 'https://meals-indol-delta.vercel.app/', label: 'meals.vercel.app' },
     logo: MealLogo,
+  },
+  {
+    name: 'Task Tracker',
+    description:
+      'Basic React ui app that manages and tracks your tasks.',
+    link: { href: 'https://vue-task-tracker-eight.vercel.app/', label: 'task-tracker.vercel.app' },
+    logo: TaskLogo,
   },
 ]
 

@@ -7,7 +7,7 @@ import { Container } from '@/components/Container'
 import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 
 import amanLogo from '@/images/logos/aman-logo.png'
-import companyOneBiLogo from '@/images/logos/onebi-logo.png'
+import companyJeenAILogo from '@/images/logos/jeen_logo.ico'
 import theOpenUniLogo from '@/images/logos/theOpenUni-logo.png'
 
 import { getAllExperiences } from '@/lib/getAllArticles'
@@ -71,9 +71,9 @@ function SocialLink({ icon: Icon, ...props }) {
 function Resume() {
   let resume = [
     {
-      company: 'One BI',
+      company: 'Jeen Ai',
       title: 'Full Stack Developer',
-      logo: companyOneBiLogo,
+      logo: companyJeenAILogo,
       start: '2024',
       end: {
         label: 'Present',
@@ -95,7 +95,7 @@ function Resume() {
       title: 'B.Sc Computer Science',
       logo: theOpenUniLogo,
       start: '2024',
-      end: '2028'
+      end: 'Present'
       // end: {
       //   label: 'Present',
       //   dateTime: new Date().getFullYear(),
@@ -293,7 +293,7 @@ export default function Home({ experiences }) {
               <br></br>
               I&apos;ve worked with a team to deliver results in a fast-paced,
               early stage startup environment. I&apos;ve written code
-              that&apos;s responsible for .<br></br>
+              that&apos;s responsible for.<br></br>
               <br></br>
               In my past role I Continued to make improvements and optimizations
               to internal systems and help move my team towards best practices

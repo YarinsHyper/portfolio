@@ -1,7 +1,7 @@
 const experiences = [
   {
     title: 'Full Stack Developer',
-    company: 'OneBI',
+    company: 'Jeen Ai',
     description:
       'I am part of a dynamic development team focused on delivering cutting-edge business intelligence solutions to clients across various industries. My role involves independently managing projects, utilizing the latest AI tools such as OpenAI and GenAI, and applying my expertise in Python, Node.js, React, and PostgreSQL to develop scalable, secure, and high-performance systems. Our clientele spans sectors like Telecom, High Tech, Banking, Finance, Insurance, Retail, and Trade, where we aim to enhance operational efficiency through efficient, reliable, and user-friendly technology-oriented solutions. This position demands continuous learning, adaptability, and handling a diverse array of projects, emphasizing my dedication to leveraging the newest technologies to achieve outstanding project outcomes.',
     date: '2024-01-15',
