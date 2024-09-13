@@ -2,6 +2,7 @@ const experiences = [
   {
     title: 'Full Stack Developer',
     company: 'Jeen Ai',
+    site: 'https://jeen.ai',
     description:
       'I am part of a dynamic development team focused on delivering cutting-edge business intelligence solutions to clients across various industries. My role involves independently managing projects, utilizing the latest AI tools such as OpenAI and GenAI, and applying my expertise in Python, Node.js, React, and PostgreSQL to develop scalable, secure, and high-performance systems. Our clientele spans sectors like Telecom, High Tech, Banking, Finance, Insurance, Retail, and Trade, where we aim to enhance operational efficiency through efficient, reliable, and user-friendly technology-oriented solutions. This position demands continuous learning, adaptability, and handling a diverse array of projects, emphasizing my dedication to leveraging the newest technologies to achieve outstanding project outcomes.',
     date: '2024-01-15',
@@ -10,6 +11,7 @@ const experiences = [
   {
     title: 'Full Stack Developer',
     company: 'IDF Intelligence Unit',
+    site:'',
     description:
       'Actively contributed to, mentored and led the transition to new technologies such as Golang, Node.js, React, Redux.js, Docker, Kubernetes, AWS, and MongoDB, adhering to micro-services architecture and Agile methodology. My expertise spans a range of languages and technologies including Vue.js, TypeScript, Redis, Azure and many more, with a track record of excellence recognized by a certification from the intelligence corps. In my service i\'ve worked on two main projects, \"Drive\" which is a system that manages and stores classified military files like the known system \'google drive\' and \"Transfers" which is a system that manages and transfers classified military files between calssified networks much like google \'analystics\'.',
     date: '2020-10-13',

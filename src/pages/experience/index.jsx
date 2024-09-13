@@ -13,7 +13,15 @@ function Experience({ experience }) {
       <Card className="md:col-span-3">
         {/* <Card.Title href={`${article.url}`}> */}
         <Card.Title>{experience.title}</Card.Title>
-        <Card.Company>{experience.company}</Card.Company>
+        <Card.Company> {experience.company}
+          {experience.site !== '' && <> - <a href={experience.site} target="_blank" rel="noopener noreferrer"
+           style={{  textDecoration: 'none' }}
+           onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
+           onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
+          >
+             Visit Website
+          </a></>}
+        </Card.Company>
         <Card.Eyebrow
           as="time"
           dateTime={experience.date}
@@ -32,7 +40,7 @@ function Experience({ experience }) {
       >
         {formatDate(experience.date)}
       </Card.Eyebrow>
-    </article>
+    </article >
   )
 }
 
