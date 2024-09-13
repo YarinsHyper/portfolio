@@ -39,8 +39,10 @@ export default function Contact() {
           <div className="lg:pl-20">
             <div className="max-w-xs px-2.5 lg:max-w-none">
               <Image
-                src="/path/to/your/image.jpg" // Ensure you provide a valid src path
+                src="/images/avatar.png" // Ensure you provide a valid src path
                 alt=""
+                width={300}
+                height={300}
                 sizes="(min-width: 1024px) 32rem, 20rem"
                 className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
