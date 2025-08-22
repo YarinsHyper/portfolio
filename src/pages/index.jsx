@@ -247,7 +247,7 @@ export default function Home({ experiences }) {
         <meta
           name="description"
           content="I’m Yarin, a full-stack web developer based in Israel with 4+ years of practice. 
-          ${\n} Seeking a dynamic role as a Full Stack or Backend Developer."
+          ${\n} Seeking a dynamic role as a Full Stack or Backend Developer. "
         />
         {/* Accessibility scripts */}
         <script src="https://code.jquery.com/jquery-1.12.4.js" type="text/javascript"></script>
