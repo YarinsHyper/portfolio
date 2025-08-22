@@ -249,6 +249,19 @@ export default function Home({ experiences }) {
           content="I’m Yarin, a full-stack web developer based in Israel with 3+ years of practice. 
           ${\n} Seeking a dynamic role as a Full Stack or Backend Developer."
         />
+        {/* Accessibility scripts */}
+        <script src="https://code.jquery.com/jquery-1.12.4.js" type="text/javascript"></script>
+        <script src="https://www.negishim.com/accessibility/accessibility_pro_group255.js" type="text/javascript"></script>
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+              accessibility_rtl = true;
+              pixel_from_side = 20;
+              pixel_from_start = 20;
+            `,
+          }}
+        />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
@@ -284,7 +297,7 @@ export default function Home({ experiences }) {
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
             <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-              I love building software, and have spent the past few years working 
+              I love building software, and have spent the past few years working
               on applications With contributions
               in frontend, backend, and devops spanning a range of programming
               languages and tools, I&apos;ve participated in the full software

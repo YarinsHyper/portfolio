@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
 import { Container } from '@/components/Container'
-
+import TosPopup from '@/components/PrivacyPolicyPopup'
+import TermsOfUsePopup from '@/components/TermsOfUsePopup'
+import AccessibilityStatementPopup from '@/components/AccessibilityStatementPopup'
 function NavLink({ href, children }) {
   return (
     <Link
@@ -25,6 +27,11 @@ export function Footer() {
                 <NavLink href="/experience">Experience</NavLink>
                 <NavLink href="/contact">Contact</NavLink>
                 {/* <NavLink href="/consulting">Consulting</NavLink> */}
+              </div>
+              <div className="flex space-x-2">
+                <TosPopup />
+                <TermsOfUsePopup />
+                <AccessibilityStatementPopup />
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Yarin Benisty. All rights
