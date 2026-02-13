@@ -246,7 +246,7 @@ export default function Home({ experiences }) {
         <title>Yarin - Resume</title>
         <meta
           name="description"
-          content="I’m Yarin, a full-stack web developer based in Israel with 4+ years of practice. 
+          content="I’m Yarin, a full-stack web developer based in Israel with over 4 years of practice. 
           ${\n} Seeking a dynamic role as a Full Stack or Backend Developer. "
         />
         {/* Accessibility scripts */}
