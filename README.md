@@ -1,4 +1,11 @@
 # Personal Portfolio
+---
+![Viewing Only](https://img.shields.io/badge/Usage-Viewing%20Only-red?style=for-the-badge)
+![No Reuse](https://img.shields.io/badge/Code-Reuse%20Prohibited-black?style=for-the-badge)
+![No Deployment](https://img.shields.io/badge/Deployment-Forbidden-important?style=for-the-badge)
+![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-blue?style=for-the-badge)
+
+---
 
 This repository contains the source code for my personal portfolio website.
 
