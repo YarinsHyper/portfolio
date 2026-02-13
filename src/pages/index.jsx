@@ -76,7 +76,7 @@ function Resume() {
       logo: companyJeenAILogo,
       start: '2024',
       end: {
-        label: 'Present',
+        label: '2026',
         dateTime: new Date().getFullYear(),
       },
     },
@@ -97,7 +97,7 @@ function Resume() {
       start: '2024',
       end: 'Present'
       // end: {
-      //   label: 'Present',
+      //   label: '2026',
       //   dateTime: new Date().getFullYear(),
       // },
     }
@@ -308,7 +308,7 @@ export default function Home({ experiences }) {
               early stage startup environment. I&apos;ve written code
               that&apos;s responsible for.<br></br>
               <br></br>
-              In my past role I Continued to make improvements and optimizations
+              In my past roles I Continued to make improvements and optimizations
               to internal systems and help move my team towards best practices
               in engineering standards.<br></br>
               <br></br>

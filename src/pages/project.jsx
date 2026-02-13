@@ -2,8 +2,9 @@ import Image from 'next/image'
 import Head from 'next/head'
 import React from 'react'
 import AvatarLogo from '../images/avatar.png'
-import MealLogo from '../images/meal.png'
+import MealLogo from '../images/logos/meal.ico'
 import TaskLogo from '../images/logos/tasks.ico'
+import HeartLogo from '../images/logos/heart.ico'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
@@ -28,6 +29,13 @@ const projects = [
       'Basic React ui app that manages and tracks your tasks.',
     link: { href: 'https://vue-task-tracker-eight.vercel.app/', label: 'task-tracker.vercel.app' },
     logo: TaskLogo,
+  },
+  {
+    name: 'Valentine',
+    description:
+      'Basic HTML website for valentine\'s day for my partner',
+    link: { href: 'https://yarinshyper.github.io/will-you-be-my-valentine/', label: 'will-you-be-my-valentine.github.io' },
+    logo: HeartLogo,
   },
 ]
 
