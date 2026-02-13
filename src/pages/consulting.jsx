@@ -1,14 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 import { Card } from '@/components/Card';
 import { Section } from '@/components/Section';
 import { SimpleLayout } from '@/components/SimpleLayout';
 
-import logoInfinispace from '@/images/logos/infinispace-logo.png';
-import logoDove from '@/images/logos/dove-logo.png';
-import logoAngelFlight from '@/images/logos/angel-flight-logo.png';
+// import logoDove from '@/images/logos/dove-logo.png';
 
 function ToolsSection({ children, ...props }) {
   return (
@@ -47,7 +45,7 @@ export default function Consulting() {
             <div className="flex">
               <div className="relative mt-1 mr-3 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                 <a href="https://www.dove.com/us/en/home.html" target="_blank" rel="noreferrer">
-                  <Image src={logoDove} alt="Dove Logo" className="h-7 w-7" unoptimized />
+                  {/* <Image src={logoDove} alt="Dove Logo" className="h-7 w-7" unoptimized /> */}
                 </a>
               </div>
               <Tool title="Dove">
@@ -57,7 +55,7 @@ export default function Consulting() {
             <div className="flex">
               <div className="relative mt-1 mr-3 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                 <a href="https://www.angelflightwest.org/?gclid=CjwKCAiAleOeBhBdEiwAfgmXfyf1bQdySutsja5RIxvzojnRjXKRylj6uB0JwmeyQl6tAkah2HfnjRoCwWYQAvD_BwE" target="_blank" rel="noreferrer">
-                  <Image src={logoAngelFlight} alt="Angel Flight Logo" className="h-7 w-7" unoptimized />
+                  {/* <Image src={logoAngelFlight} alt="Angel Flight Logo" className="h-7 w-7" unoptimized /> */}
                 </a>
               </div>
               <Tool title="Angel Flight">
@@ -67,7 +65,7 @@ export default function Consulting() {
             <div className="flex">
               <div className="relative mt-1 mr-3 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                 <a href="https://infinispace.io/" target="_blank" rel="noreferrer">
-                  <Image src={logoInfinispace} alt="Infinispace Logo" className="h-7 w-7" unoptimized />
+                  {/* <Image src={logoInfinispace} alt="Infinispace Logo" className="h-7 w-7" unoptimized /> */}
                 </a>
               </div>
               <Tool title="Infinispace">
