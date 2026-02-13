@@ -1,6 +1,6 @@
 # Personal Use License (All Rights Reserved)
 
-Copyright (c) 2026 Yarin
+Copyright (c) 2026 YarinsHyper
 All rights reserved.
 
 ---
