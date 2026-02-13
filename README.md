@@ -92,4 +92,4 @@ If you would like permission to use something from this project, contact me thro
 
 ---
 
-© Yarin — All Rights Reserved
+© YarinsHyper — All Rights Reserved
