@@ -39,7 +39,7 @@ const projects = [
     logo: TaskLogo,
   },
   {
-    name: 'Valentine',
+    name: 'Valentines Day',
     description:
       'HTML website for valentine\'s day for my partner.',
     link: { href: 'https://yarinshyper.github.io/will-you-be-my-valentine/', label: 'will-you-be-my-valentine.github.io' },
