@@ -5,6 +5,7 @@ import AvatarLogo from '../images/avatar.png'
 import MealLogo from '../images/logos/meal.ico'
 import TaskLogo from '../images/logos/tasks.ico'
 import HeartLogo from '../images/logos/heart.ico'
+import ExpenseLogo from '../images/logos/expense.ico'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
@@ -19,21 +20,28 @@ const projects = [
   {
     name: 'Meals Site',
     description:
-      'Basic React ui app that calculates your meals in a shopping cart.',
+      'React ui app that calculates your meals in a shopping cart.',
     link: { href: 'https://meals-indol-delta.vercel.app/', label: 'meals.vercel.app' },
     logo: MealLogo,
   },
   {
+    name: 'Expense Manager',
+    description:
+      'Project to showcase statistics and graph for expenses.',
+    link: { href: 'https://expense-manager-sigma-lime.vercel.app/', label: 'expense-manager.vercel.app' },
+    logo: ExpenseLogo,
+  },
+  {
     name: 'Task Tracker',
     description:
-      'Basic React ui app that manages and tracks your tasks.',
+      'React ui app that manages and tracks your tasks.',
     link: { href: 'https://vue-task-tracker-eight.vercel.app/', label: 'task-tracker.vercel.app' },
     logo: TaskLogo,
   },
   {
     name: 'Valentine',
     description:
-      'Basic HTML website for valentine\'s day for my partner',
+      'HTML website for valentine\'s day for my partner.',
     link: { href: 'https://yarinshyper.github.io/will-you-be-my-valentine/', label: 'will-you-be-my-valentine.github.io' },
     logo: HeartLogo,
   },
