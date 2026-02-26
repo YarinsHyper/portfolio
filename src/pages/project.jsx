@@ -5,7 +5,9 @@ import AvatarLogo from '../images/avatar.png'
 import MealLogo from '../images/logos/meal.ico'
 import TaskLogo from '../images/logos/tasks.ico'
 import HeartLogo from '../images/logos/heart.ico'
+import JeenLogo from '../images/logos/jeen_logo.ico'
 import ExpenseLogo from '../images/logos/expense.ico'
+import AmanLogo from '../images/logos/aman-logo.png'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
@@ -47,6 +49,26 @@ const projects = [
   },
 ]
 
+const industryProjects = [{
+  name: 'Playground',
+  description:
+    'AI Innovation Platform – Designed a secure, enterprise-grade AI collaboration platform enabling organizations to manage and customize AI access across multiple models and cloud environments. Features include smart team chat, cloud-based data protection, document management, chat history tracking, and seamless integration with leading AI providers — all within a branded, user-friendly interface.',
+  link: { href: 'https://stg.jeenai.app/', label: 'jeen.ai' },
+  logo: JeenLogo,
+}, {
+  name: 'Drive',
+  description:
+    'Classified File Management System (Intelligence Corps) – Contributed to the development of a secure, large-scale file storage platform for classified military data (similar to Google Drive). Built using Golang, gRPC, Vue.js, Docker, Kubernetes, Azure, AWS, and MongoDB within a microservices architecture. Led adoption of modern technologies (Node.js, React, Redis, RabbitMQ). Received a Certification of Excellence for contributing to an award-winning system.',
+  // link: { href: '', label: 'drive.app' },
+  logo: AmanLogo,
+}, {
+  name: 'Transfers',
+  description:
+    'Classified Network File Transfer System – Led the development of a secure platform for transferring classified military files across restricted networks. Built primarily with Node.js, React, Docker, Kubernetes, AWS, MongoDB, and Redis within a microservices architecture using Agile methodology.',
+  // link: { href: '', label: 'transfers.app' },
+  logo: AmanLogo,
+}]
+
 function LinkIcon(props) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
@@ -66,8 +88,8 @@ export default function Projects() {
         <meta name="description" content="Software I've written." />
       </Head>
       <SimpleLayout
-        title="My Projects"
-        intro="These are my personal Projects that i have worked on in the past few years."
+        title="Personal"
+        intro="These are selected personal projects I’ve developed and worked on over the past few years."
       >
         <ul
           role="list"
@@ -84,16 +106,49 @@ export default function Projects() {
                 />
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                <Card.Link href={project.link.href}>{project.name}</Card.Link>
+                <Card.Link href={project.link?.href || ''}>{project.name}</Card.Link>
               </h2>
               <Card.Description>{project.description}</Card.Description>
-              <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+              {project.link && <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
                 <LinkIcon className="h-6 w-6 flex-none" />
                 <span className="ml-2">{project.link.label}</span>
-              </p>
+              </p>}
             </Card>
           ))}
         </ul>
+
+      </SimpleLayout>
+      <SimpleLayout
+        title="Industry"
+        intro="These are projects I’ve contributed to, developed, maintained, and evolved into scalable systems."
+      >
+        <ul
+          role="list"
+          className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          {industryProjects.map((project) => (
+            <Card as="li" key={project.name}>
+              <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                <Image
+                  src={project.logo}
+                  alt=""
+                  className="h-8 w-8"
+                  unoptimized
+                />
+              </div>
+              <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                <Card.Link href={project.link?.href || ''}>{project.name}</Card.Link>
+              </h2>
+              <Card.Description>{project.description}</Card.Description>
+              {project.link && <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+                <LinkIcon className="h-6 w-6 flex-none" />
+                <span className="ml-2">{project.link.label}</span>
+              </p>
+              }
+            </Card>
+          ))}
+        </ul>
+
       </SimpleLayout>
     </>
   )
