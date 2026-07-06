@@ -5,6 +5,8 @@ import AvatarLogo from '../images/avatar.png'
 import MealLogo from '../images/logos/meal.ico'
 import TaskLogo from '../images/logos/tasks.ico'
 import HeartLogo from '../images/logos/heart.ico'
+import SkiLogo from '../images/logos/ski-logo.ico'
+import TaskManagerLogo from '../images/logos/task-manager.ico'
 import JeenLogo from '../images/logos/jeen_logo.ico'
 import ExpenseLogo from '../images/logos/expense.ico'
 import AmanLogo from '../images/logos/aman-logo.png'
@@ -47,6 +49,20 @@ const projects = [
     link: { href: 'https://yarinshyper.github.io/will-you-be-my-valentine/', label: 'will-you-be-my-valentine.github.io' },
     logo: HeartLogo,
   },
+  {
+    name: 'Tasks Manager',
+    description:
+      'React app that manages your tasks, that can showcase, filter and sort it',
+    link: { href: 'https://yarinshyper.github.io/task-manager/', label: 'task-manager.github.io' },
+    logo: TaskManagerLogo,
+  },
+    {
+    name: 'Ski Booking Board',
+    description:
+      'React app that lets you find ski resorts and book by time, location and price.',
+    link: { href: 'https://yarinshyper.github.io/ski-resorts/', label: 'ski-resorts.github.io' },
+    logo: SkiLogo,
+  }
 ]
 
 const industryProjects = [{
