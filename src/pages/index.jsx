@@ -8,6 +8,7 @@ import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 
 import amanLogo from '@/images/logos/aman-logo.png'
 import companyJeenAILogo from '@/images/logos/jeen_logo.ico'
+import companyFijoyaLogo from '@/images/logos/fijoya_logo.png'
 import theOpenUniLogo from '@/images/logos/theOpenUni-logo.png'
 
 import { getAllExperiences } from '@/lib/getAllArticles'
@@ -70,6 +71,16 @@ function SocialLink({ icon: Icon, ...props }) {
 
 function Resume() {
   let resume = [
+    {
+      company: 'Fijoya',
+      title: 'Full Stack Engineer',
+      logo: companyFijoyaLogo,
+      start: '2026',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear(),
+      },
+    },
     {
       company: 'Jeen Ai',
       title: 'Full Stack Developer',
@@ -266,14 +277,14 @@ export default function Home({ experiences }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Full-stack web developer
+            Full Stack Engineer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             <b>
-              I&apos;m Yarin, a Full-stack web developer based in Israel with 5+
+              I&apos;m Yarin, a Full Stack Engineer based in Israel with 5+
               years of practice.
               <br></br>
-              Seeking a dynamic role as a Full Stack or Backend Developer,
+              Seeking a dynamic role as a Full Stack or Backend Egineer,
               utilizing my skills and experience to contribute to innovative
               projects and deliver high-quality solutions.
             </b>
